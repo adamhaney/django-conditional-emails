@@ -37,7 +37,7 @@ class TriggerRule(models.Model):
     chaining = (
         ('OR', 'Or'),
         ('AND', 'And')
-        )    
+        )
 
     user_property = models.CharField(max_length=1024)
     operator = models.CharField(choices=operators, max_length=3)
@@ -45,7 +45,6 @@ class TriggerRule(models.Model):
 
 
 class SentEmail(models.Model):
-    user = models.ForeignKey(User, 'sent_emails')
+    user = models.ForeignKey(User, related_name='sent_emails')
     source = models.TextField()
     sent = models.DateTimeField(auto_now_add=True)
-    
