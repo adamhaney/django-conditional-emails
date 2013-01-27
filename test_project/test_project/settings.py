@@ -112,6 +112,7 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'test_project.conditional_emails',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -119,7 +120,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'test_project.conditional_emails'
+    'django_extensions',
+    'test_project.testapp'
 )
 
 # A sample logging configuration. The only tangible logging
