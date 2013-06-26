@@ -1,3 +1,8 @@
+DEPRECATED: I started this project as an attempt to scratch my own itch. 
+That itch has since been scraped with django-drip which sends emails to
+users based on a conditions system. I'm keeping this repo around for my 
+own reference but I highly suggest using django-drip instead of this.
+
 ==================
 Conditional Emails
 ==================
